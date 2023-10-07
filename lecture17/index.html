@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        .img2 {
+            /* position: relative;
+            top: 100px;
+            left: 200px; */
+            position: absolute;
+            bottom: 30px;
+        }
+        .container{
+            position: relative;
+            background-color: antiquewhite;
+        }
+        .container1{
+            position: relative;
+            height: 8000px;
+            background-color: antiquewhite;
+        }
+
+        .img44{
+            position: fixed;
+        }
+
+        .img33{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Position absolute  -->
+
+    <div class="container">
+        <img src="k1.jpg" alt="Image" width="300px" height="300px" class="img1">
+        <img src="k2.jpg" alt="Image" width="300px" height="300px" class="img2">
+        <img src="k3.jpg" alt="Image" width="300px" height="300px" class="img3">
+        <img src="k4.jpg" alt="Image" width="300px" height="300px" class="img4">
+    </div>
+
+    <!-- Position fixed -->
+
+    <div class="container1">
+        <img src="k1.jpg" alt="Image" width="300px" height="300px" class="img11">
+        <img src="k2.jpg" alt="Image" width="300px" height="300px" class="img22">
+        <img src="k3.jpg" alt="Image" width="300px" height="300px" class="img33">
+        <img src="k4.jpg" alt="Image" width="300px" height="300px" class="img44">
+    </div>
+
+    <!-- Postion sticky -->
+
+    <div class="box">
+
+
+    </div>
+</body>
+
+</html>
