@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Media Query Example</title>
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
-        }
         .container{
-            height: 500px;
             background-color: beige;
             border: 5px solid black; 
             margin: 2px;
             padding: 2px;
             display: flex;
-            flex-direction: row;
-            /* flex-direction: row-reverse; */
-            /* flex-direction: column; */
-            /* flex-direction: column-reverse; */
-            /* flex-wrap: wrap; */
-            /* flex-wrap: wrap-reverse; */
-            justify-content: start;
-            align-items:start;
-            align-content: start;
-            
         }
         .box{
             width: 100px;
@@ -37,34 +22,40 @@
         }
         #box1{
             background-color: aqua;
-            /* order: 500; */
-            /* flex-shrink: 4;  */
-            /* flex-grow: 5; */
         }
         #box2{
             background-color: blue;
-            /* order: 1; */
-            /* flex-grow: 1; */
-            
         }
         #box3{
             background-color: orange;
-            /* order: 1; */
-            /* flex-grow: 1; */  
         }
         #box4{
             background-color: brown;
-            /* flex-grow: 1; */
-            flex-basis: 500px; 
         }
         
         #box5{
             background-color: blueviolet;
-            align-self: center;
         }
+
+        @media (min-width: 640px) {
+            .container{
+                flex-direction: row;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+
     </style>
+
 </head>
+
 <body>
+
+
     <div class="container">
         <div class="box" id="box1">Box 1</div>
         <div class="box" id="box2">Box 2</div>
@@ -73,4 +64,5 @@
         <div class="box" id="box5">Box 5</div>
     </div>
 </body>
+
 </html>

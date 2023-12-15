@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query place</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            margin: 10px;
+            padding: 2px;
+        }
+        .boxleft{
+            width: 47%;
+            background-color: aqua;
+            border: 1px solid brown;
+            padding: 2px;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        .boxright{
+            width: 47%;
+            background-color: cadetblue;
+            border: 2px solid bisque;
+            padding: 2px;
+            margin: 3px;
+        }
+        p{
+            border: 1px solid red;
+        }
+        img{
+            width: 170px;
+        }
+
+        @media  (max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+      
+    <div class="container">
+        <div class="boxleft">
+            <p>Text 1</p> 
+            <p>Text 2</p>
+        </div>
+        <div class="boxright">
+            <img src="https://i.pinimg.com/736x/b9/ef/1b/b9ef1b5502fa92533037a3b67b4fc4e1.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
