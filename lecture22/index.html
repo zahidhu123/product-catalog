@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        .container {
+            background-color: beige;
+            border: 2px solid black;
+            height: 650px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 330px;
+            height: 330px;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 10px brown;   --> Box Shadow */
+            /* box-shadow: 20px 20px 40px blueviolet;  --> Box shadow using blure radius */
+             /* box-shadow: 20px 25px 8px 80px rgba(15, 10, 45, 0.7);  */
+             box-shadow: inset 10px 20px brown;
+        }
+
+        /* Box shadow
+        .box{
+            box-shadow: 10px 10px brown;
+        } */
+
+        /* Box shadow using blure radius
+        .box{
+            box-shadow: 20px 20px 40px blueviolet;
+        } */
+
+        /* Spread Ratio
+        .box{
+            box-shadow: 20px 20px 40px blueviolet;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://cdn.thecodehelp.in/qdo970k2vrxj8kefd1zt_9520ff468a.svg" alt="">
+            <h1>Welcome to the codehelp</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui laborum nesciunt velit? Dolore cum
+                vitae voluptas, obcaecati, praesentium blanditiis nulla libero nesciunt porro velit omnis, a
+                reprehenderit vel tempore?</p>
+        </div>
+    </div>
+</body>
+
+</html>
