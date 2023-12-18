@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadow</title>
     <style>
+        :root {
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
         .container {
             background-color: beige;
             border: 2px solid black;
@@ -18,16 +22,27 @@
 
         .box {
             background-color: aquamarine;
-            width: 330px;
+            width: var(--custom-width);
             height: 330px;
             border: 1px solid black;
             margin: 5px;
             padding: 5px;
-            /* box-shadow: 10px 10px brown;   --> Box Shadow */
+            box-shadow: 10px 10px var(--primary-color);
             /* box-shadow: 20px 20px 40px blueviolet;  --> Box shadow using blure radius */
              /* box-shadow: 20px 25px 8px 80px rgba(15, 10, 45, 0.7);  */
-             box-shadow: inset 10px 20px brown;
+             /* box-shadow: inset 20px 20px 167px green; */
+             /* box-shadow: inset 10px 20px brown; Inbuild shadow */
+             /* box-shadow: 10px 15px red, 15px 20px green; We add multiple shadow in css */
         }
+
+        #head1{
+            /* text-shadow: 12px 10px 1px white; */
+            /* text-shadow: yellow 10px 12px  2px; */
+            /* text-shadow: 12px 14px red; */
+            text-shadow: 12px 14px;
+
+        }
+
 
         /* Box shadow
         .box{
@@ -51,7 +66,7 @@
     <div class="container">
         <div class="box">
             <img src="https://cdn.thecodehelp.in/qdo970k2vrxj8kefd1zt_9520ff468a.svg" alt="">
-            <h1>Welcome to the codehelp</h1>
+            <h1 id="head1">Welcome to the codehelp</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui laborum nesciunt velit? Dolore cum
                 vitae voluptas, obcaecati, praesentium blanditiis nulla libero nesciunt porro velit omnis, a
                 reprehenderit vel tempore?</p>
