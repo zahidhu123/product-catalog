@@ -1,30 +1,25 @@
-// var x = 7;
-// function getName() {
-//     console.log("Namaste Javascript")
+
+
+// var x = 1;
+// a();
+// b();
+//  console.log(x)
+
+
+// function a() {
+//     var x = 10;
+//     console.log(x)
 // }
- 
-// getName();
-// console.log(x)
+// function b() {
+//     var x= 100;
+//     console.log(x)
+// }
 
-// Function Tutorial
+var a = 10;
 
-var x = 1;
-
-console.log(x)
-
-function a(){
-    var a = 10;
-    console.log(x)
+function a() {
+    var x = 10;
 }
-
-function b() {
-    var a = 100;
-    console.log(x)
-}
-
-a();
-b();
-
-
-
-
+console.log(window.a)
+console.log(a)
+console.log(this.a)
