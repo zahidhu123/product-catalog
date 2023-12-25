@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thired Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cdd6da;
+            background-image: linear-gradient(160deg, #10678d 0%, #464963 100%);
+        }
+
+        .mainBox {
+            width: 950px;
+            height: 500px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .leftBox {
+            width: 50%;
+            height: 100%;
+            background-color: #450944;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .rightBox {
+            width: 50%;
+            height: 100%;
+            background-image: url(image/icon.jpg);
+            background-size: contain;
+            /* Adjust as needed */
+            background-position: center;
+            /* Adjust as needed */
+        }
+
+        .leftWrap {
+            width: 70%;
+            gap: 60px;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .leftWrap h1 {
+            font-size: 2.2rem;
+        }
+        .countWrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mainBox">
+            <div class="leftBox">
+                <div class="leftWrap">
+                    <h1>Get insights that help your business grow</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quae totam omnis distinctio
+                        quaerat nisi. Eligendi ducimus molestiae assumenda repudiandae.</p>
+                    <div class="countWrap">
+                        <div>
+                            <span>10k</span>
+                            <p>Comments</p>
+                        </div>
+                        <div>
+                            <span>214</span>
+                            <p>Paid Users</p>
+                        </div>
+                        <div>
+                            <span>12M+</span>
+                            <p>Views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
