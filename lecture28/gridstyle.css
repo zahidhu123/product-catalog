@@ -15,9 +15,14 @@ body {
     background-color: rgb(66, 58, 58);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4,1px);
+    grid-template-rows: repeat(4,200px);
     gap: 0.4rem;
     padding: 4rem;
+    /* justify-items: end; */
+    /* justify-items: end; */
+    /* align-items: end; */
+    /* align-items: stretch;   Stretch property is work, when the items width and height is zero*/
+    place-items: center;
 }
 
 .item{
@@ -27,6 +32,6 @@ body {
     border: 3px solid white;
     /* justify-self: stretch; */
     /* align-self: end; */
-    /* place-self: center; */
+    /* place-self: stretch; */
 
 }
