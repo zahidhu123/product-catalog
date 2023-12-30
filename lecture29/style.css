@@ -10,10 +10,9 @@
 }
 
 .container {
-    max-width: 85vw;
+    max-width: 70vw;
     padding: 2rem 1rem;
     margin: 0 auto;
-    background-color: aqua;
 }
 
 .header-container {
@@ -31,54 +30,60 @@
     margin-bottom: 1rem;
     line-height: 2rem;
 }
-.sub-title{
+
+.sub-title {
     max-width: 620px;
-   color: gray; 
+    color: gray;
 }
 
 /* .header-wrap {
 
 } */
 
-a{
+a {
     text-decoration: none;
 }
 
-.main-container{
+.main-container {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(4,fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.card-container{
+.card-container {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(100, 96, 96);
-    border-radius: 2px;
+    border-radius: 5px;
 }
-.card-image-wrap{
+
+.card-image-wrap {
     position: relative;
     overflow: hidden;
-    height: 14rem;
+    height: 10rem;
 }
-.card-img{
+
+.card-img {
     position: absolute;
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
 }
-.card-title-wrap{
+
+.card-title-wrap {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1rem;
 }
-.card-container:hover .card-img{
+
+.card-container:hover .card-img {
     transform: scale(1.1);
     transition-duration: 200ms;
 }
 
-.card-title{
+.card-title {
     font-size: 1rem;
     font-weight: 700;
     color: rgb(40, 35, 35);
@@ -86,11 +91,65 @@ a{
     line-height: 1.5rem;
 }
 
-.card-title-anchor:hover .card-title{
+.card-title-anchor:hover .card-title {
     color: rgb(47, 47, 174);
 }
 
-.card-discription{
+.card-discription {
     color: rgb(101, 83, 83);
-    font-size: 1rem;
+    font-size: 14px;
+}
+
+.card-footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.auther-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.auther-avatar-container {
+    width: 2rem;
+    height: 2rem;
+    background-color: #c4b9b9;
+    border-radius: 50%;
+    border: 1px solid #afa1a1;
+    display: flex;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.auther-info-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.info-text {
+    color: #5c5cd4;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.info-date{
+    font-size: 12px;
+}
+
+.tag-wrap {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tech {
+    font-size: 0.9rem;
+    color: black;
 }
