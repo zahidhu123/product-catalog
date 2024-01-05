@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Study Project</title>
 </head>
+
 <body>
     <div class="header">
         <div class="header-content">
-            <div class="logo">
+            <a href="#logo" class="logo">
                 <img src="./Image/StudySyn.svg" alt="" class="logo-icon">
                 <span class="logo-text">StudySync</span>
-            </div>
-            <nav>
+            </a>
+            <nav class="nav">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#pricing" class="nav-link">Pricing</a>
@@ -24,7 +25,31 @@
             <a href="#contact" class="contact-button">
                 Contact US
             </a>
+
+            <button type="button" class="menu-button">
+                <img src="./Image/Hamburger.svg" alt="menu-Button" class="menu-icon">
+            </button>
         </div>
     </div>
+
+    <div class="content">
+        <section class="main-content">
+            <div class="left-content">
+                <div class="section-label"></div>
+                <div class="section-title"></div>
+                <div class="section-discription"></div>
+                <div class="button-group">
+                    <a href="#start" class="start-button">Start</a>
+                    <a href="#tour" class="take-tour">Take Tour</a>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="img-container">
+                    <img src="./Image/usgs-hoS3dzgpHzw-unsplash.jpg" alt="Main-Image" class="section-image">
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

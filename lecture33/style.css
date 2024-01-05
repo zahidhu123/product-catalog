@@ -1,6 +1,127 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">');
+
+:root {
+    --primary-color:#6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2536eb;
+    --background-color:#ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
+
+body{
+    height: 100vh;
+    text-align: center;
+    padding: 0.1rem;
+    background-color: var(--background-color);
+}
+
+.header-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.525rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo-icon{
+    width: 1.5rem;
+    height: 5rem;
+}
+.logo-text{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav{
+    display: none;
+    gap: 1.5rem;
+}
+.nav-link{
+    color: #718096;
+    font-size: 1rem;
+    font-weight: 600;
+    transform: color 0.1s;
+}
+.nav-link:hover{
+    color: var(--link-color);
+}
+
+.contact-button{
+    display: none;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.625rem 1.5rem;
+    border: none;
+    border-radius: 0.325rem;
+    transform: all 0.1s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact-button:hover{
+    background-color: #2536eb;
+}
+
+.menu-button{
+    display: none;
+    border: none;
+    border-radius: 0.354rem;
+    background-color: var(--background-color);
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+
+}
+.menu-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+/* Mobile Responsive Design */
+
+
+/* @media screen and (min-width:768px){
+    
+} */
+
+@media screen and (min-width:768px){
+    .contact-button{
+        display: block;
+    }
+
+    .nav{
+        display: flex;
+    }
+
+    
+}
+
+@media screen and (max-width:768px){
+    .menu-button{
+        display: block;
+    }
+}
+
+
