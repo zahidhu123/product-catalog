@@ -559,7 +559,7 @@ body {
 
 .footer {
     max-width: 1100px;
-    padding: 1rem;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -569,7 +569,37 @@ body {
     width: 34%;
 }
 
+.comp-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
 
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    gap: 0.6rem;
+}
+
+.logo-svg {
+    width: 1.6rem;
+    height: 2rem;
+}
+
+.social-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.filter-text {
+    color: #777;
+    font-size: 1rem;
+}
 
 
 /* Footer section end */
